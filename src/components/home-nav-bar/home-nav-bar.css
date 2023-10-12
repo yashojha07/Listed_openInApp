@@ -1,0 +1,91 @@
+.nav-bar-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25%;
+   height: 100vh;
+   background-color: #f8faff;
+}
+
+.top-content{
+   display: none;
+}
+
+.nav-bar-container > .nav-bar {
+   display: inline-block;
+   position: relative;
+   width: 80%;
+   height: 90%;
+   border-radius: 10px;
+   padding: 20px 20px;
+   background-color: #3e84f8;
+}
+
+.nav-bar > .title {
+   color: #fff;
+   font-family: Montserrat, sans-serif;
+   font-size: 36px;
+   font-weight: 700;
+   margin: 40px 20px;
+}
+
+.nav-bar > .nav-bar-button {
+   display: flex;
+   width: 80%;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 10%;
+   margin: 40px 20px;
+}
+
+.bold {
+   font-weight: 700 !important;
+}
+
+.nav-bar-button > .button-text {
+   color: #fff;
+   font-family: Montserrat, sans-serif;
+   font-size: 18px;
+   font-weight: 300;
+}
+
+.nav-bar > .help-contact-container {
+   position: absolute;
+   left: 40px;
+   bottom: 50px;
+}
+
+.help-contact-container > .small-text {
+   color: #fff;
+   font-family: Montserrat, sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+}
+
+@media (max-width: 900px) {
+   .nav-bar-container {
+      z-index: 2;
+      position: absolute;
+      border-radius: 10px;
+      left: -20px;
+      top: 100px;
+      width: 75%;
+      height: 90%;
+      background-color: transparent;
+   }
+}
+
+@media (max-width: 600px) {
+   .nav-bar-container {
+      z-index: 2;
+      position: absolute;
+      border-radius: 10px;
+      left: -10px;
+      top: 80px;
+      width: 75%;
+      height: 90%;
+      background-color: transparent;
+      display: none;
+   }
+   
+}
